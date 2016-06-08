@@ -1,0 +1,32 @@
+{
+  "name": "plough",
+  "version": "0.0.0",
+  "description": "Flatten arrays",
+  "main": "plough.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/plough.git"
+  },
+  "keywords": [
+    "flatten-arrays",
+    "flat-arrays",
+    "arrays",
+    "array",
+    "flat",
+    "plough"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/plough/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/plough#readme",
+  "dependencies": {
+    "asea": "0.0.1",
+    "decrease": "0.0.0",
+    "harden": "^0.3.1"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "plough",
+  "description": "Flatten arrays",
+  "main": "plough.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "flatten-arrays",
+    "flat-arrays",
+    "arrays",
+    "array",
+    "flat",
+    "plough"
+  ],
+  "homepage": "https://github.com/volkovasystems/plough",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "asea": "^0.0.1",
+    "harden": "^0.3.1",
+    "decrease": "^0.0.0"
+  }
+}
