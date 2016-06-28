@@ -1,5 +1,6 @@
 {
   "name": "plough",
+  "version": "0.0.1",
   "description": "Flatten arrays",
   "main": "plough.js",
   "authors": [
@@ -23,8 +24,8 @@
     "tests"
   ],
   "dependencies": {
-    "asea": "^0.0.1",
-    "harden": "^0.3.1",
-    "decrease": "^0.0.0"
+    "harden": "^0.3.2",
+    "decrease": "^0.0.1",
+    "asea": "^0.0.2"
   }
 }
