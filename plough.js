@@ -1,6 +1,6 @@
 "use strict";
 
-/*:
+/*;
 	@module-license:
 		The MIT License (MIT)
 		@mit-license
@@ -78,7 +78,7 @@ if( asea.client &&
 }
 
 var plough = function plough( array ){
-	/*:
+	/*;
 		@meta-configuration:
 			{
 				"array:required": "[*]",
