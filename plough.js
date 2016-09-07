@@ -47,7 +47,7 @@
 	@include:
 		{
 			"asea": "asea",
-			"called": "called",
+			"decrease": "decrease",
 			"harden": "harden"
 		}
 	@end-include
