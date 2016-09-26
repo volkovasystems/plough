@@ -42,13 +42,16 @@
 	@end-module-configuration
 
 	@module-documentation:
+		Flatten arrays
 	@end-module-documentation
 
 	@include:
 		{
 			"asea": "asea",
 			"decrease": "decrease",
-			"harden": "harden"
+			"doubt": "doubt",
+			"harden": "harden",
+			"raze": "raze"
 		}
 	@end-include
 */
@@ -56,7 +59,9 @@
 if( typeof window == "undefined" ){
 	var asea = require( "asea" );
 	var decrease = require( "decrease" );
+	var doubt = require( "doubt" );
 	var harden = require( "harden" );
+	var raze = require( "raze" );
 }
 
 if( typeof window != "undefined" &&
@@ -72,9 +77,21 @@ if( asea.client &&
 }
 
 if( asea.client &&
+	!( "doubt" in window ) )
+{
+	throw new Error( "doubt is not defined" );
+}
+
+if( asea.client &&
 	!( "harden" in window ) )
 {
 	throw new Error( "harden is not defined" );
+}
+
+if( asea.client &&
+	!( "raze" in window ) )
+{
+	throw new Error( "raze is not defined" );
 }
 
 var plough = function plough( array ){
@@ -86,27 +103,27 @@ var plough = function plough( array ){
 		@end-meta-configuration
 	*/
 
-	if( !Array.isArray( array ) &&
-		!Array.isArray( this ) )
+	if( !doubt( array ).AS_ARRAY &&
+		!doubt( this ).AS_ARRAY )
 	{
 		throw new Error( "invalid array" );
 	}
 
-	array = array || [ ];
+	array = raze( array ) || [ ];
 
-	if( Array.isArray( this ) ){
+	if( doubt( this ).ARRAY ){
 		array = this.concat( array );
 	}
 
-	var _array = decrease( array, function flatten( previous, current ){
-		var element = Array.isArray( current )? plough( current ) : current;
+	var list = decrease( array, function flatten( previous, current ){
+		var element = doubt( current ).ARRAY? plough( current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );
 
-	harden( "plough", plough.bind( _array ), _array );
+	harden( "plough", plough.bind( list ), list );
 
-	return _array;
+	return list;
 };
 
 if( asea.server ){
