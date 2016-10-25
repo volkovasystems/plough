@@ -115,8 +115,8 @@ var plough = function plough( array ){
 		array = this.concat( array );
 	}
 
-	var list = decrease( array, function flatten( previous, current ){
-		var element = doubt( current ).ARRAY? plough( current ) : current;
+	let list = decrease( array, function flatten( previous, current ){
+		let element = doubt( current ).ARRAY? plough( current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );

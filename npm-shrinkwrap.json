@@ -1,0 +1,31 @@
+{
+  "name": "plough",
+  "version": "0.0.5",
+  "dependencies": {
+    "asea": {
+      "version": "0.1.2",
+      "from": "asea@latest",
+      "resolved": "https://registry.npmjs.org/asea/-/asea-0.1.2.tgz"
+    },
+    "decrease": {
+      "version": "0.0.3",
+      "from": "decrease@latest",
+      "resolved": "https://registry.npmjs.org/decrease/-/decrease-0.0.3.tgz"
+    },
+    "doubt": {
+      "version": "0.0.6",
+      "from": "doubt@latest",
+      "resolved": "https://registry.npmjs.org/doubt/-/doubt-0.0.6.tgz"
+    },
+    "harden": {
+      "version": "0.3.5",
+      "from": "harden@latest",
+      "resolved": "https://registry.npmjs.org/harden/-/harden-0.3.5.tgz"
+    },
+    "raze": {
+      "version": "0.0.8",
+      "from": "raze@latest",
+      "resolved": "https://registry.npmjs.org/raze/-/raze-0.0.8.tgz"
+    }
+  }
+}
