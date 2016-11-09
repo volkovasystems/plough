@@ -47,7 +47,7 @@
 
 	@include:
 		{
-			"asea": "asea",
+			"arid": "arid",
 			"decrease": "decrease",
 			"doubt": "doubt",
 			"harden": "harden",
@@ -56,41 +56,31 @@
 	@end-include
 */
 
-if( typeof window == "undefined" ){
-	var asea = require( "asea" );
+if( typeof require == "function" ){
+	var arid = require( "arid" );
 	var decrease = require( "decrease" );
 	var doubt = require( "doubt" );
 	var harden = require( "harden" );
 	var raze = require( "raze" );
 }
 
-if( typeof window != "undefined" &&
-	!( "asea" in window ) )
-{
-	throw new Error( "asea is not defined" );
+if( typeof window != "undefined" && !( "arid" in window ) ){
+	throw new Error( "arid is not defined" );
 }
 
-if( asea.client &&
-	!( "decrease" in window ) )
-{
+if( typeof window != "undefined" && !( "decrease" in window ) ){
 	throw new Error( "decrease is not defined" );
 }
 
-if( asea.client &&
-	!( "doubt" in window ) )
-{
+if( typeof window != "undefined" && !( "doubt" in window ) ){
 	throw new Error( "doubt is not defined" );
 }
 
-if( asea.client &&
-	!( "harden" in window ) )
-{
+if( typeof window != "undefined" && !( "harden" in window ) ){
 	throw new Error( "harden is not defined" );
 }
 
-if( asea.client &&
-	!( "raze" in window ) )
-{
+if( typeof window != "undefined" && !( "raze" in window ) ){
 	throw new Error( "raze is not defined" );
 }
 
@@ -98,25 +88,26 @@ var plough = function plough( array ){
 	/*;
 		@meta-configuration:
 			{
-				"array:required": "[*]",
+				"array:required": [
+					"[*]",
+					"..."
+				]
 			}
 		@end-meta-configuration
 	*/
 
-	if( !doubt( array ).AS_ARRAY &&
-		!doubt( this ).AS_ARRAY )
-	{
-		throw new Error( "invalid array" );
+	array = raze( arguments );
+
+	if( arid( array ) ){
+		array = doubt( this ).ARRAY? this : [ ];
 	}
 
-	array = raze( array ) || [ ];
-
-	if( doubt( this ).ARRAY ){
+	if( doubt( this ).ARRAY && array != this ){
 		array = this.concat( array );
 	}
 
 	let list = decrease( array, function flatten( previous, current ){
-		let element = doubt( current ).ARRAY? plough( current ) : current;
+		let element = doubt( current ).ARRAY? plough.apply( null, current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );
@@ -126,6 +117,6 @@ var plough = function plough( array ){
 	return list;
 };
 
-if( asea.server ){
+if( typeof module != "undefined" && typeof module.exports != "undefined" ){
 	module.exports = plough;
 }

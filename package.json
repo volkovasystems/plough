@@ -1,6 +1,6 @@
 {
   "name": "plough",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "Flatten arrays",
   "main": "plough.js",
   "scripts": {
@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/volkovasystems/plough#readme",
   "dependencies": {
-    "asea": "^0.1.2",
-    "decrease": "0.0.3",
-    "doubt": "0.0.6",
-    "harden": "^0.3.5",
-    "raze": "0.0.8"
+    "arid": "^0.2.0",
+    "decrease": "^0.2.0",
+    "doubt": "^0.2.0",
+    "harden": "^0.6.0",
+    "raze": "^0.3.0"
   }
 }
