@@ -56,35 +56,13 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var arid = require( "arid" );
-	var decrease = require( "decrease" );
-	var doubt = require( "doubt" );
-	var harden = require( "harden" );
-	var raze = require( "raze" );
-}
+const arid = require( "arid" );
+const decrease = require( "decrease" );
+const doubt = require( "doubt" );
+const harden = require( "harden" );
+const raze = require( "raze" );
 
-if( typeof window != "undefined" && !( "arid" in window ) ){
-	throw new Error( "arid is not defined" );
-}
-
-if( typeof window != "undefined" && !( "decrease" in window ) ){
-	throw new Error( "decrease is not defined" );
-}
-
-if( typeof window != "undefined" && !( "doubt" in window ) ){
-	throw new Error( "doubt is not defined" );
-}
-
-if( typeof window != "undefined" && !( "harden" in window ) ){
-	throw new Error( "harden is not defined" );
-}
-
-if( typeof window != "undefined" && !( "raze" in window ) ){
-	throw new Error( "raze is not defined" );
-}
-
-var plough = function plough( array ){
+const plough = function plough( array ){
 	/*;
 		@meta-configuration:
 			{
@@ -107,7 +85,7 @@ var plough = function plough( array ){
 	}
 
 	let list = decrease( array, function flatten( previous, current ){
-		let element = doubt( current ).ARRAY? plough.apply( null, current ) : current;
+		let element = doubt( current ).AS_ARRAY? plough.apply( null, current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );
@@ -117,6 +95,4 @@ var plough = function plough( array ){
 	return list;
 };
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = plough;
-}
+module.exports = plough;
