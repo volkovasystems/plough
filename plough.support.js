@@ -59,41 +59,41 @@
 	@end-include
 */
 
-const arid = require( "arid" );
-const decrease = require( "decrease" );
-const doubt = require( "doubt" );
-const harden = require( "harden" );
-const raze = require( "raze" );
+var arid = require("arid");
+var decrease = require("decrease");
+var doubt = require("doubt");
+var harden = require("harden");
+var raze = require("raze");
 
-const plough = function plough( array ){
+var plough = function plough(array) {
 	/*;
-		@meta-configuration:
-			{
-				"array:required": [
-					"[*]",
-					"..."
-				]
-			}
-		@end-meta-configuration
-	*/
+ 	@meta-configuration:
+ 		{
+ 			"array:required": [
+ 				"[*]",
+ 				"..."
+ 			]
+ 		}
+ 	@end-meta-configuration
+ */
 
-	array = raze( arguments );
+	array = raze(arguments);
 
-	if( arid( array ) ){
-		array = doubt( this ).ARRAY? this : [ ];
+	if (arid(array)) {
+		array = doubt(this).ARRAY ? this : [];
 	}
 
-	if( doubt( this ).ARRAY && array != this ){
-		array = this.concat( array );
+	if (doubt(this).ARRAY && array != this) {
+		array = this.concat(array);
 	}
 
-	let list = decrease( array, function flatten( previous, current ){
-		let element = doubt( current ).AS_ARRAY? plough.apply( null, current ) : current;
+	var list = decrease(array, function flatten(previous, current) {
+		var element = doubt(current).AS_ARRAY ? plough.apply(null, current) : current;
 
-		return previous.concat( element );
-	}, [ ] );
+		return previous.concat(element);
+	}, []);
 
-	harden( "plough", plough.bind( list ), list );
+	harden("plough", plough.bind(list), list);
 
 	return list;
 };
