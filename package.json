@@ -1,6 +1,6 @@
 {
   "name": "plough",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Flatten arrays",
   "main": "plough.js",
   "support": "plough.support.js",
@@ -31,18 +31,19 @@
   },
   "homepage": "https://github.com/volkovasystems/plough#readme",
   "dependencies": {
-    "arid": "^0.4.0",
-    "babel-runtime": "^6.20.0",
-    "decrease": "^0.4.0",
-    "doubt": "^0.6.0",
-    "harden": "^0.12.0",
-    "raze": "^0.6.0"
+    "arid": "^0.5.0",
+    "babel-runtime": "^6.22.0",
+    "decrease": "^0.5.0",
+    "doubt": "^0.8.0",
+    "harden": "^0.13.0",
+    "raze": "^0.7.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-latest": "^6.16.0",
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "source-map-loader": "^0.1.6",
     "webpack": "^1.14.0"
   }
 }
