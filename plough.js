@@ -80,10 +80,10 @@ const plough = function plough( array ){
 	array = raze( arguments );
 
 	if( arid( array ) ){
-		array = doubt( this ).ARRAY? this : [ ];
+		array = doubt( this, ARRAY )? this : [ ];
 	}
 
-	if( doubt( this ).ARRAY && array != this ){
+	if( doubt( this, ARRAY ) && array != this ){
 		array = this.concat( array );
 	}
 

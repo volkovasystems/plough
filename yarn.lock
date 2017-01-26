@@ -48,13 +48,13 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.0 || ^1.1.13"
 
-arid@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/arid/-/arid-0.5.0.tgz#9c1f542c80f57e714adf50819341cf6d07169093"
+arid@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/arid/-/arid-0.6.0.tgz#d68d09fbe862d7b6e92836414b2cc40667200c83"
   dependencies:
     babel-runtime "^6.22.0"
-    doubt "^0.8.0"
-    truly "^0.7.0"
+    doubt "^0.9.0"
+    truly "^0.8.0"
 
 arr-diff@^2.0.0:
   version "2.0.0"
@@ -850,16 +850,16 @@ decamelize@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-decrease@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/decrease/-/decrease-0.5.0.tgz#2e3fc8d9cbb32f4af04e7b3af2ad2bb449a9fe33"
+decrease@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/decrease/-/decrease-0.6.0.tgz#979b709c304682530d6b6b0c8d4854a727ad6b07"
   dependencies:
     babel-runtime "^6.22.0"
-    doubt "^0.8.0"
+    doubt "^0.9.0"
     harden "^0.13.0"
-    protype "^0.9.0"
-    raze "^0.7.0"
-    truly "^0.7.0"
+    protype "^0.10.0"
+    raze "^0.9.0"
+    truly "^0.8.0"
 
 deep-extend@~0.4.0:
   version "0.4.1"
@@ -883,14 +883,14 @@ domain-browser@^1.1.1:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/domain-browser/-/domain-browser-1.1.7.tgz#867aa4b093faa05f1de08c06f4d7b21fdf8698bc"
 
-doubt@^0.8.0:
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.8.0.tgz#acd76ed9f621891015f203a39f5be8e12aefe258"
+doubt@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/doubt/-/doubt-0.9.0.tgz#0cf45d6bcbe68f6ab728db660aca07cb1cdfb4f4"
   dependencies:
     babel-runtime "^6.22.0"
     cemento "^0.6.0"
     harden "^0.13.0"
-    protype "^0.9.0"
+    protype "^0.10.0"
 
 ecc-jsbn@~0.1.1:
   version "0.1.1"
@@ -1597,9 +1597,9 @@ process@^0.11.0:
   version "0.11.9"
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.9.tgz#7bd5ad21aa6253e7da8682264f1e11d11c0318c1"
 
-protype@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/protype/-/protype-0.9.0.tgz#349f84d64955c199f4f1a62164f2a50aa04089f3"
+protype@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/protype/-/protype-0.10.0.tgz#3284e3476dc9b82cf26c7c27e480e11e66722016"
   dependencies:
     babel-runtime "^6.22.0"
     cemento "^0.6.0"
@@ -1636,12 +1636,12 @@ randomatic@^1.1.3:
     is-number "^2.0.2"
     kind-of "^3.0.2"
 
-raze@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/raze/-/raze-0.7.0.tgz#a9d181a0880085c2a390560af38a8b470396b65d"
+raze@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/raze/-/raze-0.9.0.tgz#13c729c635296bd03c78252abe5d434d129309ca"
   dependencies:
     babel-runtime "^6.22.0"
-    doubt "^0.8.0"
+    doubt "^0.9.0"
     harden "^0.13.0"
 
 rc@~1.1.6:
@@ -1967,12 +1967,12 @@ tough-cookie@~2.3.0:
   dependencies:
     punycode "^1.4.1"
 
-truly@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/truly/-/truly-0.7.0.tgz#710c972fc98f28828348ec84a1f630524900932e"
+truly@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/truly/-/truly-0.8.0.tgz#4eab2430f72f161e29533aaf3a44c5926d0b68e2"
   dependencies:
     babel-runtime "^6.22.0"
-    protype "^0.9.0"
+    protype "^0.10.0"
 
 tty-browserify@0.0.0:
   version "0.0.0"
