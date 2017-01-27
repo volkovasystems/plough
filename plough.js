@@ -88,7 +88,7 @@ const plough = function plough( array ){
 	}
 
 	let list = decrease( array, function flatten( previous, current ){
-		let element = doubt( current ).AS_ARRAY? plough.apply( null, current ) : current;
+		let element = doubt( current, AS_ARRAY )? plough.apply( null, current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );
