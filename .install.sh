@@ -20,4 +20,5 @@ decrease \
 doubt \
 harden \
 raze \
---save
+--save \
+--force-latest
