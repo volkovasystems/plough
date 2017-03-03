@@ -1,6 +1,6 @@
 {
   "name": "plough",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "description": "Flatten arrays",
   "main": "plough.deploy.js",
   "support": "plough.support.js",
@@ -26,10 +26,10 @@
     "tests"
   ],
   "dependencies": {
-    "arid": "^0.15.0",
-    "decrease": "^0.12.0",
-    "doubt": "^0.17.0",
-    "harden": "^0.16.0",
-    "raze": "^0.19.0"
+    "arid": "^0.16.0",
+    "decrease": "^0.13.0",
+    "doubt": "^0.19.0",
+    "harden": "^0.17.0",
+    "raze": "^0.20.0"
   }
 }
