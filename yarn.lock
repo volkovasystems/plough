@@ -65,13 +65,23 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.0 || ^1.1.13"
 
-arid@^0.16.0:
-  version "0.16.0"
-  resolved "https://registry.yarnpkg.com/arid/-/arid-0.16.0.tgz#5bc36765f94efe8980ae05ac3be23901a9504bef"
+arid@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/arid/-/arid-0.17.0.tgz#22b62b1158272f3c3a1b652cbfd8340ea9ddfa41"
+  dependencies:
+    arkount "^0.0.0"
+    babel-runtime "^6.23.0"
+    doubt "^0.19.0"
+
+arkount@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/arkount/-/arkount-0.0.0.tgz#c373effa7be6100190b03a4cc56f212e00611f13"
   dependencies:
     babel-runtime "^6.23.0"
     doubt "^0.19.0"
+    raze "^0.20.0"
     truly "^0.14.0"
+    wichevr "^0.2.0"
 
 arr-diff@^2.0.0:
   version "2.0.0"
@@ -984,10 +994,11 @@ decamelize@^1.0.0, decamelize@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-decrease@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/decrease/-/decrease-0.13.0.tgz#f3fed223ed5b7e1318fc62304bf232c798aa02c1"
+decrease@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/decrease/-/decrease-0.14.0.tgz#966d132a299e484279f96a1a9c792ce5384fea62"
   dependencies:
+    arkount "^0.0.0"
     babel-runtime "^6.23.0"
     doubt "^0.19.0"
     harden "^0.17.0"
@@ -1083,8 +1094,8 @@ errno@^0.1.3:
     prr "~0.0.0"
 
 error-ex@^1.2.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.0.tgz#e67b43f3e82c96ea3a584ffee0b9fc3325d802d9"
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/error-ex/-/error-ex-1.3.1.tgz#f855a86ce61adc4e8621c3cda21e7a7612c3a8dc"
   dependencies:
     is-arrayish "^0.2.1"
 
@@ -2481,6 +2492,14 @@ webpack@^2.2.1:
 which-module@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/which-module/-/which-module-1.0.0.tgz#bba63ca861948994ff307736089e3b96026c2a4f"
+
+wichevr@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/wichevr/-/wichevr-0.2.0.tgz#c1ec2e8edd76dc15a4ad0e160b9743b9b36bca8c"
+  dependencies:
+    babel-runtime "^6.23.0"
+    raze "^0.20.0"
+    truly "^0.14.0"
 
 wide-align@^1.1.0:
   version "1.1.0"
