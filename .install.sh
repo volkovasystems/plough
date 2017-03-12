@@ -3,7 +3,6 @@ babel-runtime \
 arid \
 decrease \
 doubt \
-harden \
 raze \
 --save && \
 yarn add \
@@ -18,7 +17,6 @@ bower install \
 arid \
 decrease \
 doubt \
-harden \
 raze \
 --save \
 --force-latest

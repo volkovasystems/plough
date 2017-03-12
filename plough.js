@@ -53,7 +53,6 @@
 			"arid": "arid",
 			"decrease": "decrease",
 			"doubt": "doubt",
-			"harden": "harden",
 			"raze": "raze"
 		}
 	@end-include
@@ -62,7 +61,6 @@
 const arid = require( "arid" );
 const decrease = require( "decrease" );
 const doubt = require( "doubt" );
-const harden = require( "harden" );
 const raze = require( "raze" );
 
 const plough = function plough( array ){
@@ -80,22 +78,14 @@ const plough = function plough( array ){
 	array = raze( arguments );
 
 	if( arid( array ) ){
-		array = doubt( this, ARRAY )? this : [ ];
+		return array;
 	}
 
-	if( doubt( this, ARRAY ) && array != this ){
-		array = this.concat( array );
-	}
-
-	let list = decrease( array, function flatten( previous, current ){
+	return decrease( array, function flatten( previous, current ){
 		let element = doubt( current, AS_ARRAY )? plough.apply( null, current ) : current;
 
 		return previous.concat( element );
 	}, [ ] );
-
-	harden( "plough", plough.bind( list ), list );
-
-	return list;
 };
 
 module.exports = plough;
