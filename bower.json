@@ -1,12 +1,13 @@
 {
   "name": "plough",
-  "version": "0.26.0",
+  "version": "0.27.0",
   "description": "Flatten arrays",
   "main": "plough.deploy.js",
   "support": "plough.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -26,9 +27,9 @@
     "tests"
   ],
   "dependencies": {
-    "arid": "^0.26.0",
-    "decrease": "^0.24.0",
-    "doubt": "^0.27.0",
-    "raze": "^0.30.0"
+    "arid": "^0.28.0",
+    "decrease": "^0.25.0",
+    "doubt": "^0.29.0",
+    "raze": "^0.32.0"
   }
 }
