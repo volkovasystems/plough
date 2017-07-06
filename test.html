@@ -1,8 +1,38 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./plough.deploy.js">
-		</script>
+		<title>plough unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./plough.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "plough unit test", function( assert ) {
+
+				assert.deepEqual( plough( ), [ ], "should be empty array" );
+
+				assert.deepEqual( plough( [ ] ), [ ], "should be empty array" );
+
+				assert.deepEqual( plough( [ 1, 2, 3, [ 4, 5, 6 ] ] ), [ 1, 2, 3, 4, 5, 6 ], "should be equal" );
+
+				( function ( ){
+					assert.deepEqual( plough( arguments ), [ ], "should be empty array" );
+				} )( );
+
+				( function ( ){
+					assert.deepEqual( plough( arguments ), [ "hello", "world", 1, 2, 3, "yeah", 4, 5, 6 ], "should be equal" );
+				} )( [ "hello", [ "world" ], 1, 2, 3 ], [ "yeah", 4, 5, 6 ] );
+				
+			} );
+		</script>
+	</body>
 </html>
