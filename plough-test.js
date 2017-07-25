@@ -14,4 +14,6 @@ assert.deepEqual( plough( [ 1, 2, 3, [ 4, 5, 6 ] ] ), [ 1, 2, 3, 4, 5, 6 ],
 	"should return [ 'hello', 'world', 1, 2, 3, 'yeah', 4, 5, 6 ]" );
 } )( [ "hello", [ "world" ], 1, 2, 3 ], [ "yeah", 4, 5, 6 ] );
 
+assert.deepEqual( plough( "hello" ), [ "hello" ], "should be deeply equal" );
+
 console.log( "ok" );
