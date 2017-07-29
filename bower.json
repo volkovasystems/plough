@@ -1,6 +1,6 @@
 {
 	"name": "plough",
-	"version": "0.29.0",
+	"version": "0.30.0",
 	"description": "Flatten arrays",
 	"main": "plough.deploy.js",
 	"support": "plough.support.js",
