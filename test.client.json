@@ -1,0 +1,180 @@
+{
+	"state": {
+		"passed": 4,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-29T16:13:52.839Z",
+	"end": "2017-07-29T16:14:42.302Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "plough",
+			"duration": 0,
+			"start": "2017-07-29T16:14:41.900Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "plough",
+			"duration": 222,
+			"start": "2017-07-29T16:14:41.900Z",
+			"end": "2017-07-29T16:14:42.122Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-29T16:14:41.905Z",
+					"end": "2017-07-29T16:14:41.907Z",
+					"duration": 2,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-29T16:14:41.999Z",
+					"end": "2017-07-29T16:14:42.000Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.002Z",
+					"end": "2017-07-29T16:14:42.002Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.044Z",
+					"end": "2017-07-29T16:14:42.045Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.045Z",
+					"end": "2017-07-29T16:14:42.045Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ 1, 2, 3, 4, 5, 6 ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.084Z",
+					"end": "2017-07-29T16:14:42.084Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ 1, 2, 3, 4, 5, 6 ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.085Z",
+					"end": "2017-07-29T16:14:42.085Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ 'hello' ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.122Z",
+					"end": "2017-07-29T16:14:42.122Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ 'hello' ]"
+				},
+				{
+					"start": "2017-07-29T16:14:42.122Z",
+					"end": "2017-07-29T16:14:42.122Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "plough"
+				}
+			]
+		},
+		{
+			"name": "`plough( )`",
+			"duration": 99,
+			"start": "2017-07-29T16:14:41.902Z",
+			"end": "2017-07-29T16:14:42.001Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-29T16:14:41.904Z",
+					"end": "2017-07-29T16:14:41.995Z",
+					"duration": 91,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`plough( [ ] )`",
+			"duration": 43,
+			"start": "2017-07-29T16:14:42.002Z",
+			"end": "2017-07-29T16:14:42.045Z",
+			"tests": [
+				{
+					"name": "should be equal to [ ]",
+					"start": "2017-07-29T16:14:42.002Z",
+					"end": "2017-07-29T16:14:42.044Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`plough( [ 1, 2, 3, [ 4, 5, 6 ] ] )`",
+			"duration": 39,
+			"start": "2017-07-29T16:14:42.045Z",
+			"end": "2017-07-29T16:14:42.084Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 1, 2, 3, 4, 5, 6 ]",
+					"start": "2017-07-29T16:14:42.045Z",
+					"end": "2017-07-29T16:14:42.084Z",
+					"duration": 39,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`plough( 'hello' )`",
+			"duration": 37,
+			"start": "2017-07-29T16:14:42.085Z",
+			"end": "2017-07-29T16:14:42.122Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'hello' ]",
+					"start": "2017-07-29T16:14:42.085Z",
+					"end": "2017-07-29T16:14:42.122Z",
+					"duration": 37,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
