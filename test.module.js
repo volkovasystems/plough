@@ -92,19 +92,11 @@ describe( "plough", ( ) => {
 		} );
 	} );
 
-	/* @makeme
-	( function ( ){
-		assert.deepEqual( plough( arguments ), [ "hello", "world", 1, 2, 3, "yeah", 4, 5, 6 ],
-		"should return [ 'hello', 'world', 1, 2, 3, 'yeah', 4, 5, 6 ]" );
-	} )( [ "hello", [ "world" ], 1, 2, 3 ], [ "yeah", 4, 5, 6 ] );
-
-	describe( "`<test>`", ( ) => {
-		it( <message>, ( ) => {
-			<assertion>
+	describe( "`plough( { 0: 'hello', 1: 'world' } )`", ( ) => {
+		it( "should be equal to [ { 0: 'hello', 1: 'world' } ]", ( ) => {
+			assert.deepEqual( plough( { 0: "hello", 1: "world" } ), [ { 0: "hello", 1: "world" } ] );
 		} );
 	} );
-		@end-makeme
-	*/
 
 	describe( "`plough( 'hello' )`", ( ) => {
 		it( "should be equal to [ 'hello' ]", ( ) => {
@@ -138,6 +130,12 @@ describe( "plough", ( ) => {
 		} );
 	} );
 
+	describe( "`plough( { 0: 'hello', 1: 'world' } )`", ( ) => {
+		it( "should be equal to [ { 0: 'hello', 1: 'world' } ]", ( ) => {
+			assert.deepEqual( plough( { 0: "hello", 1: "world" } ), [ { 0: "hello", 1: "world" } ] );
+		} );
+	} );
+
 	describe( "`plough( 'hello' )`", ( ) => {
 		it( "should be equal to [ 'hello' ]", ( ) => {
 			assert.deepEqual( plough( "hello" ), [ "hello" ] );
@@ -152,34 +150,61 @@ describe( "plough", ( ) => {
 
 describe( "plough", ( ) => {
 
-	const testBridge = path.resolve(__dirname, "bridge.html");
-	const bridgeURL = "file://" + testBridge;
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`plough( )`", ( ) => {
 		it( "should be equal to [ ]", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => plough( ) );
-			assert.deepEqual( result.value, [ ] );
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute( ( ) => JSON.stringify( plough( ) ) );
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result.value ), [ ] );
+
 		} );
 	} );
 
 	describe( "`plough( [ ] )`", ( ) => {
 		it( "should be equal to [ ]", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => plough( [ ] ) );
-			assert.deepEqual( result.value, [ ] );
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute( ( ) => JSON.stringify( plough( [ ] ) ) );
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result.value ), [ ] );
+
 		} );
 	} );
 
 	describe( "`plough( [ 1, 2, 3, [ 4, 5, 6 ] ] )`", ( ) => {
 		it( "should be equal to [ 1, 2, 3, 4, 5, 6 ]", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => plough( [ 1, 2, 3, [ 4, 5, 6 ] ] ) );
-			assert.deepEqual( result.value, [ 1, 2, 3, 4, 5, 6 ] );
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute( ( ) => JSON.stringify( plough( [ 1, 2, 3, [ 4, 5, 6 ] ] ) ) );
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result.value ), [ 1, 2, 3, 4, 5, 6 ] );
+
+		} );
+	} );
+
+	describe( "`plough( { 0: 'hello', 1: 'world' } )`", ( ) => {
+		it( "should be equal to [ { 0: 'hello', 1: 'world' } ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( plough( { 0: "hello", 1: "world" } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ { 0: "hello", 1: "world" } ] );
+
 		} );
 	} );
 
 	describe( "`plough( 'hello' )`", ( ) => {
 		it( "should be equal to [ 'hello' ]", ( ) => {
-			let result = browser.url( bridgeURL ).execute( ( ) => plough( "hello" ) );
-			assert.deepEqual( result.value, [ "hello" ] );
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute( ( ) => JSON.stringify( plough( "hello" ) ) );
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result.value ), [ "hello" ] );
+
 		} );
 	} );
 
