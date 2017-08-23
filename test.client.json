@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 4,
+		"passed": 5,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-07-29T16:13:52.839Z",
-	"end": "2017-07-29T16:14:42.302Z",
+	"start": "2017-08-23T03:09:18.802Z",
+	"end": "2017-08-23T03:09:58.492Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,84 +28,100 @@
 		{
 			"name": "plough",
 			"duration": 0,
-			"start": "2017-07-29T16:14:41.900Z",
+			"start": "2017-08-23T03:09:58.039Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "plough",
-			"duration": 222,
-			"start": "2017-07-29T16:14:41.900Z",
-			"end": "2017-07-29T16:14:42.122Z",
+			"duration": 273,
+			"start": "2017-08-23T03:09:58.040Z",
+			"end": "2017-08-23T03:09:58.313Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-07-29T16:14:41.905Z",
-					"end": "2017-07-29T16:14:41.907Z",
-					"duration": 2,
-					"title": "\"before each\" hook",
-					"associatedSuite": "plough",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-07-29T16:14:41.999Z",
-					"end": "2017-07-29T16:14:42.000Z",
-					"duration": 1,
-					"title": "\"after each\" hook",
-					"associatedSuite": "plough",
-					"associatedTest": "should be equal to [ ]"
-				},
-				{
-					"start": "2017-07-29T16:14:42.002Z",
-					"end": "2017-07-29T16:14:42.002Z",
+					"start": "2017-08-23T03:09:58.041Z",
+					"end": "2017-08-23T03:09:58.041Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.044Z",
-					"end": "2017-07-29T16:14:42.045Z",
-					"duration": 1,
+					"start": "2017-08-23T03:09:58.137Z",
+					"end": "2017-08-23T03:09:58.137Z",
+					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.045Z",
-					"end": "2017-07-29T16:14:42.045Z",
+					"start": "2017-08-23T03:09:58.138Z",
+					"end": "2017-08-23T03:09:58.138Z",
 					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-08-23T03:09:58.187Z",
+					"end": "2017-08-23T03:09:58.187Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ ]"
+				},
+				{
+					"start": "2017-08-23T03:09:58.187Z",
+					"end": "2017-08-23T03:09:58.188Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ 1, 2, 3, 4, 5, 6 ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.084Z",
-					"end": "2017-07-29T16:14:42.084Z",
+					"start": "2017-08-23T03:09:58.233Z",
+					"end": "2017-08-23T03:09:58.233Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ 1, 2, 3, 4, 5, 6 ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.085Z",
-					"end": "2017-07-29T16:14:42.085Z",
+					"start": "2017-08-23T03:09:58.234Z",
+					"end": "2017-08-23T03:09:58.234Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ { 0: 'hello', 1: 'world' } ]"
+				},
+				{
+					"start": "2017-08-23T03:09:58.276Z",
+					"end": "2017-08-23T03:09:58.276Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "plough",
+					"associatedTest": "should be equal to [ { 0: 'hello', 1: 'world' } ]"
+				},
+				{
+					"start": "2017-08-23T03:09:58.277Z",
+					"end": "2017-08-23T03:09:58.277Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ 'hello' ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.122Z",
-					"end": "2017-07-29T16:14:42.122Z",
+					"start": "2017-08-23T03:09:58.313Z",
+					"end": "2017-08-23T03:09:58.313Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "plough",
 					"associatedTest": "should be equal to [ 'hello' ]"
 				},
 				{
-					"start": "2017-07-29T16:14:42.122Z",
-					"end": "2017-07-29T16:14:42.122Z",
+					"start": "2017-08-23T03:09:58.313Z",
+					"end": "2017-08-23T03:09:58.313Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "plough"
@@ -114,15 +130,15 @@
 		},
 		{
 			"name": "`plough( )`",
-			"duration": 99,
-			"start": "2017-07-29T16:14:41.902Z",
-			"end": "2017-07-29T16:14:42.001Z",
+			"duration": 97,
+			"start": "2017-08-23T03:09:58.040Z",
+			"end": "2017-08-23T03:09:58.137Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-07-29T16:14:41.904Z",
-					"end": "2017-07-29T16:14:41.995Z",
-					"duration": 91,
+					"start": "2017-08-23T03:09:58.041Z",
+					"end": "2017-08-23T03:09:58.136Z",
+					"duration": 95,
 					"state": "pass"
 				}
 			],
@@ -130,15 +146,15 @@
 		},
 		{
 			"name": "`plough( [ ] )`",
-			"duration": 43,
-			"start": "2017-07-29T16:14:42.002Z",
-			"end": "2017-07-29T16:14:42.045Z",
+			"duration": 49,
+			"start": "2017-08-23T03:09:58.138Z",
+			"end": "2017-08-23T03:09:58.187Z",
 			"tests": [
 				{
 					"name": "should be equal to [ ]",
-					"start": "2017-07-29T16:14:42.002Z",
-					"end": "2017-07-29T16:14:42.044Z",
-					"duration": 42,
+					"start": "2017-08-23T03:09:58.138Z",
+					"end": "2017-08-23T03:09:58.187Z",
+					"duration": 49,
 					"state": "pass"
 				}
 			],
@@ -146,15 +162,31 @@
 		},
 		{
 			"name": "`plough( [ 1, 2, 3, [ 4, 5, 6 ] ] )`",
-			"duration": 39,
-			"start": "2017-07-29T16:14:42.045Z",
-			"end": "2017-07-29T16:14:42.084Z",
+			"duration": 46,
+			"start": "2017-08-23T03:09:58.187Z",
+			"end": "2017-08-23T03:09:58.233Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 1, 2, 3, 4, 5, 6 ]",
-					"start": "2017-07-29T16:14:42.045Z",
-					"end": "2017-07-29T16:14:42.084Z",
-					"duration": 39,
+					"start": "2017-08-23T03:09:58.187Z",
+					"end": "2017-08-23T03:09:58.233Z",
+					"duration": 46,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`plough( { 0: 'hello', 1: 'world' } )`",
+			"duration": 42,
+			"start": "2017-08-23T03:09:58.234Z",
+			"end": "2017-08-23T03:09:58.276Z",
+			"tests": [
+				{
+					"name": "should be equal to [ { 0: 'hello', 1: 'world' } ]",
+					"start": "2017-08-23T03:09:58.234Z",
+					"end": "2017-08-23T03:09:58.276Z",
+					"duration": 42,
 					"state": "pass"
 				}
 			],
@@ -163,13 +195,13 @@
 		{
 			"name": "`plough( 'hello' )`",
 			"duration": 37,
-			"start": "2017-07-29T16:14:42.085Z",
-			"end": "2017-07-29T16:14:42.122Z",
+			"start": "2017-08-23T03:09:58.276Z",
+			"end": "2017-08-23T03:09:58.313Z",
 			"tests": [
 				{
 					"name": "should be equal to [ 'hello' ]",
-					"start": "2017-07-29T16:14:42.085Z",
-					"end": "2017-07-29T16:14:42.122Z",
+					"start": "2017-08-23T03:09:58.276Z",
+					"end": "2017-08-23T03:09:58.313Z",
 					"duration": 37,
 					"state": "pass"
 				}

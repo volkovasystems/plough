@@ -88,19 +88,11 @@ describe( "plough", ( ) => {
 		} );
 	} );
 
-	/* @makeme
-	( function ( ){
-		assert.deepEqual( plough( arguments ), [ "hello", "world", 1, 2, 3, "yeah", 4, 5, 6 ],
-		"should return [ 'hello', 'world', 1, 2, 3, 'yeah', 4, 5, 6 ]" );
-	} )( [ "hello", [ "world" ], 1, 2, 3 ], [ "yeah", 4, 5, 6 ] );
-
-	describe( "`<test>`", ( ) => {
-		it( <message>, ( ) => {
-			<assertion>
+	describe( "`plough( { 0: 'hello', 1: 'world' } )`", ( ) => {
+		it( "should be equal to [ { 0: 'hello', 1: 'world' } ]", ( ) => {
+			assert.deepEqual( plough( { 0: "hello", 1: "world" } ), [ { 0: "hello", 1: "world" } ] );
 		} );
 	} );
-		@end-makeme
-	*/
 
 	describe( "`plough( 'hello' )`", ( ) => {
 		it( "should be equal to [ 'hello' ]", ( ) => {
